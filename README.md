@@ -1,42 +1,40 @@
 # Roadside-Deer-Classification-Project
-Overview
-This project aims to develop a machine learning model for computer vision that identifies animals in roadside images. The goal is to label and magnify animals in the images, categorizing them by species. This initiative is targeted at reducing roadkill by integrating the model with traffic cameras.
+> Overview
+This project develops a computer vision machine learning model to identify animals in roadside images. The initiative aims to reduce roadkill by integrating the model with traffic cameras. A unique feature of this model is its ability to classify animals not only by species but also by gender, such as distinguishing between bucks and does in deer. This added dimension of gender classification serves as a stepping stone to recognize finer distinctions among animals, inspired by easily observable differences like antlers in deer. Such features, although seemingly minor, can be crucial in differentiating species that appear similar, paving the way for more nuanced ecological studies and conservation efforts.
 
-Project Steps
+> Project Steps
 
->1. Define Project Objectives and Requirements
-1.	Specify the types of animals the model needs to identify.
-2.	Set accuracy and performance metrics for the model.
+1. Define Project Objectives and Requirements
+- Specify the types of animals and their characteristics (including gender) the model needs to identify.
+- Set accuracy and performance metrics for the model.
+  
+2. Data Collection
+- Utilize Open-Source Datasets such as iNaturalist and ImageNet for diverse animal images.
+- Annotate images with detailed labels, including species and gender.
 
->2. Data Collection
-1.	Open-Source Datasets: iNaturalist, ImageNet, etc., provide a wealth of animal images for training.
-2.	Data Labeling: Annotate each image with the category of the animal it contains.
+3. Data Preprocessing
+- Image Filtering: Ensure clarity and appropriate lighting conditions.
+- Format Standardization: Normalize image sizes and resolutions.
+- Data Augmentation: Enhance the dataset via image modifications.
 
->3. Data Preprocessing
-1.	Image Filtering: Ensure images meet quality standards (clarity, lighting conditions, etc.).
-2.	Format Standardization: Normalize image sizes and resolutions.
-3.	Data Augmentation: Expand the dataset by altering images (rotating, flipping, etc.).
+4. Model Design
+- Opt for a Convolutional Neural Network (CNN) framework, with a focus on models like YOLO for real-time object detection.
+- Customize the model architecture to align with project requirements.
 
->4. Model Design
-1.	Choose a Framework: I’m thinking to use CNN (Convolutional Neural Networks) or similar.
-2.	Design Architecture: Tailor the model's structure to meet project needs.
-3.  Convolutional Neural Network (CNN) based model is usually a good choice. Specifically, models like YOLO (You Only Look Once) are highly effective for real-time object detection, which makes them suitable for this project.
-
->5. Train the Model
-1.	Train the model using the prepared dataset.
-2.	Adjust parameters to optimize performance.
-3.	Inspiration:
+5. Train the Model
+- Train using the prepared dataset and refine parameters for optimal performance.
+- Inspiration:
 https://universe.roboflow.com/finalroadsideproject/roadside_project
-   This is a well developed project on classifying the roadside deer, however, the project could be improved by further identifying the gender (buck or doe), standing position (standing, eating, etc). 
+   Draw inspiration from projects like Roadside Deer Classification, aiming to extend capabilities by identifying gender and behavior patterns.
 
->6 Test the database images
-1. Overall Good performance
-2. To conclude, the YOLOv5 model has shown remarkable capability in detecting and differentiating between types of deer. These results not only validate the effectiveness of our model but also open avenues for its application in wildlife monitoring and ecological studies.
-If I have more time in the future: I would use the more updated version (YOLOV8 – failed this time due to time and configuration limitations) to tract the motions of the deer as well.
+6 Test the database images
+- Evaluate performance on a diverse set of images, including challenging scenarios like nighttime and deer near vehicles.
 
-Results:
-“Breaking it down, the model‘s performance on different deer types was noteworthy. For males, it achieved a precision of 82.9% and for females, an even higher precision of 88.8%. This demonstrates the model's ability to differentiate between various deer types effectively."
+> Results:
+The YOLOv5 model demonstrated excellent proficiency in identifying different deer types, achieving a precision of 82.9% for males and 88.8% for females. These results underscore the model's effectiveness in gender differentiation.
 
-
+> Future Plans
+- Upgrade to a more advanced version, such as YOLOv8, to improve motion tracking and address time and configuration limitations encountered previously.
+- Focus on enhancing model accuracy in low-light conditions and complex scenarios involving vehicles, as initial tests have shown reduced accuracy in these areas.
 
 
