@@ -27,13 +27,13 @@ This project develops a computer vision machine learning model to identify anima
 https://universe.roboflow.com/finalroadsideproject/roadside_project
    Draw inspiration from projects like Roadside Deer Classification, aiming to extend capabilities by identifying gender and behavior patterns.
 
-6 Test the database images
+6. Test the database images
 - Evaluate performance on a diverse set of images, including challenging scenarios like nighttime and deer near vehicles.
 
-> Results:
+# Results:
 The YOLOv5 model demonstrated excellent proficiency in identifying different deer types, achieving a precision of 82.9% for males and 88.8% for females. These results underscore the model's effectiveness in gender differentiation.
 
-> Future Plans
+# Future Plans
 - Upgrade to a more advanced version, such as YOLOv8, to improve motion tracking and address time and configuration limitations encountered previously.
 - Focus on enhancing model accuracy in low-light conditions and complex scenarios involving vehicles, as initial tests have shown reduced accuracy in these areas.
 
